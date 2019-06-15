@@ -2,11 +2,15 @@
 
 const Q = require('@nmq/q/client');
 
-const filesQ = new Q('filesQ'); //files Queue
+const filesQ = new Q('filesQueue'); //files Queue; needs to reference specific name used in server
 
-const dbQ = new Q('databaseQ'); //db Queue
+const dbQ = new Q('databaseQueue'); //db Queue
 
 ////subscribing to the dbQueue
+
+dbQ.subscribe('alive', (payload) => {
+  console.log('its alive!', payload);
+});
 
 dbQ.subscribe('create', (payload) => {
   console.log('create happened', payload);
