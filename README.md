@@ -1,9 +1,9 @@
 ![CF](http://i.imgur.com/7v5ASc8.png) LAB
 =================================================
 
-## Project Name
+## Lab 19 - Logger Repo (1 of 4)
 
-### Author: Student/Group Name
+### Author: Becky Peterson
 
 ### Links and Resources
 * [submission PR](http://xyz.com)
